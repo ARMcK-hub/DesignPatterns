@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     container:
-      image: armck/designpatterns:${{ github.sha }}
+      image: ${{ secrets.DOCKER_HUB_ID }}/designpatterns:${{ github.sha }}
       credentials:
         username: ${{ secrets.DOCKER_HUB_ID }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
