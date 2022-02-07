@@ -65,7 +65,7 @@ if __name__ == "__main__":
     product.operation1()
 
     # Example: Product DI -
-    product_type = Product
+    product_type = ConcreteProduct
     factory = (
         IocConcreteFactory()
     )  # Note that the IoC could have occured on initializing of the factory
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # Example: Factory IoC - Allows application to request the type of factory / product
     container = Container()
     container.register_service(
-        Factory, ConcreteFactory
+        Factory, ConcreteFactory()
     )  # register in application configuration
 
     factory: Factory = container.get_service(Factory)  # access throughout application

@@ -3,6 +3,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, List
 
+from src.utils import stdout_var
+
 
 class Component(ABC):
     # an abstract interface for a leaf or primitive component
@@ -95,7 +97,7 @@ if __name__ == "__main__":
     # example of a simple operation with a single leaf object
     simple_comp = Leaf()
     simple_ops = simple_comp.operation()
-    print(simple_ops)
+    stdout_var(f"{simple_ops=}", simple_ops)
 
     # example of a complex operation with 2 branches and a leaf object
     tree = Composite()
@@ -110,7 +112,7 @@ if __name__ == "__main__":
     tree.add(branch_b)
     tree.add(Leaf())
     complex_ops = tree.operation()
-    print(complex_ops)
+    stdout_var(f"{complex_ops=}", complex_ops)
 
     # example of a self-promoting/demoting DynamicComponent
     comp = LeafDC()
@@ -127,7 +129,7 @@ if __name__ == "__main__":
     [comp.add(c) for c in added_comps]
     print("After adding child components, self-promotion - comp.is_composite(): ", comp.is_composite())
     controlled_complex_ops = comp.operation()
-    print(controlled_complex_ops)
+    stdout_var(f"{controlled_complex_ops=}", controlled_complex_ops)
 
     [comp.remove(c) for c in added_comps]
     print("After removing child components, self-demotion - comp.is_composite(): ", comp.is_composite())
