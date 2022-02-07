@@ -28,6 +28,6 @@
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.venvPath": "/root/.cache/pypoetry/virtualenvs/",
-    "python.languageServer": "Pylance"
-    // "python.pythonPath": "/root/.cache/pypoetry/virtualenvs/samm-Jv1cOMGk-py3.7/bin/python"
+    "python.languageServer": "Pylance",
+    "python.pythonPath": "/root/.cache/pypoetry/virtualenvs/designpatterns-rXl31lly-py3.7/bin/python"
 }
