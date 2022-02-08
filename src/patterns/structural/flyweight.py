@@ -5,19 +5,22 @@ from typing import Dict, List
 class Flyweight:
     # a concrete object that needs to be managed
     def __init__(self, state: Dict[str, str]) -> None:
-        self._state = state
+        self.__state = state
 
-    def operation(self) -> None:
-        return self._state
+    def get_state(self) -> None:
+        # used to obtain the extrensic state of a flyweight, 
+        # intrensic states (actual object) should not be used to create / obtain flyweights
+        # as this should be managed by the factory
+        return self.__state
 
 
 class FlyweightFactory:
     # a factory that controls creation and management of flyweights
-    _flyweights: Dict[str, Flyweight]
+    __flyweights: Dict[str, Flyweight]
 
     def __init__(self, flyweights: List[Flyweight]) -> None:
         # intialize flyweights available, not required
-        self._flyweights = {self.get_key(fw): fw for fw in flyweights}
+        self.__flyweights = {self.get_key(fw): fw for fw in flyweights}
 
     def get_key(self, state: Dict[str, str]) -> str:
         # key method to managing flyweight in hash-map, dict
@@ -28,29 +31,29 @@ class FlyweightFactory:
         # makes flyweight if not exists, creates otherwise
         key = self.get_key(state)
 
-        if not self._flyweights.get(key):
-            self._flyweights[key] = Flyweight(state)
+        if not self.__flyweights.get(key):
+            self.__flyweights[key] = Flyweight(state)
 
-        return self._flyweights.get(key)
+        return self.__flyweights.get(key)
 
-    def list_flyweights(self) -> List[Flyweight]:
+    def list__flyweights(self) -> List[Flyweight]:
         # used to demonstating list of flyweights
-        return self._flyweights.keys()
+        return self.__flyweights.keys()
 
 
 if __name__ == "__main__":
     # creating and viewing flyweights mapped to Flyweight Factory
-    initial_flyweights = [
+    initial__flyweights = [
         {"state_attribute": str(i)} for i in range(5)
     ]
 
-    flyweight_factory = FlyweightFactory(initial_flyweights)
-    print("Factory Flyweights :  ", flyweight_factory.list_flyweights())
+    flyweight_factory = FlyweightFactory(initial__flyweights)
+    print("Factory Flyweights :  ", flyweight_factory.list__flyweights())
 
     new_flyweight = flyweight_factory.get_flyweight({"state_attribute": "420"})
-    print("New Flyweight :  ", new_flyweight._state)
-    print("Factory Flyweights :  ", flyweight_factory.list_flyweights())
+    print("New Flyweight :  ", new_flyweight.get_state())
+    print("Factory Flyweights :  ", flyweight_factory.list__flyweights())
 
-    reget_flyweight = flyweight_factory.get_flyweight({"state_attribute": "420"})
-    print("Factory Flyweights :  ", flyweight_factory.list_flyweights())
+    reget_flyweight = flyweight_factory.get_flyweight(new_flyweight.get_state())
+    print("Factory Flyweights :  ", flyweight_factory.list__flyweights())
     print(f"Validating Object IDs : (Match={id(new_flyweight) == id(reget_flyweight)})", id(new_flyweight), id(reget_flyweight))
