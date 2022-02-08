@@ -8,7 +8,7 @@ class Flyweight:
         self.__state = state
 
     def get_state(self) -> None:
-        # used to obtain the extrensic state of a flyweight, 
+        # used to obtain the extrensic state of a flyweight,
         # intrensic states (actual object) should not be used to create / obtain flyweights
         # as this should be managed by the factory
         return self.__state
