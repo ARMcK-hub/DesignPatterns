@@ -31,7 +31,7 @@
 - Similar to [Prototype](/docs/creational_patterns/creational_patterns.md#prototype) but doesn't require `Product` initialization
 
 ## Prototype  
-**Intent:** Create replica objects from a prototype  
+**Intent:** Create replica objects from a `Prototype`  
 **Components:** `Prototype`, `ConcretePrototype`, `Client`  
 **Implementation:** [prototype.py](/src/patterns/creational/prototype.py)  
 **Related:**  
@@ -39,7 +39,7 @@
 - Typically integrates will with heavy use of [Composite](/docs/structural_patterns/structural_patterns.md#composite) and [Decorator](/docs/structural_patterns/structural_patterns.md#decorator) patterns
 
 ## Singleton  
-**Intent:** Ensure a class only has one instance  
+**Intent:** Ensure a class only has a single instance  
 **Components:** `Singleton`  
 **Implementation:** [singleton.py](/src/patterns/creational/singleton.py)  
 **Related:**  

@@ -5,7 +5,7 @@
 * **Builder** - *Create complex objects step-by-step via same construction process*
 * **Factory Method** - *Create subclass-altered/defined superclass objects*
 * **Prototype** - *Create replica objects from a prototype*
-* **Singleton** - *Ensure a class only has one instance*
+* **Singleton** - *Ensure a class only has a single instance*
 
 ## [Structural](/docs/structural_patterns/structural_patterns.md)
 * **Adapter** - *Translate an interface to be client compatible*
