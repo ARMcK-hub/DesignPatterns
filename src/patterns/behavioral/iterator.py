@@ -55,10 +55,6 @@ class SequentialCollection(list):
         # overwritten for printing
         return str(self._collection)
 
-    def __str__(self) -> str:
-        # overwriten for printing
-        return str(self._collection)
-
 
 if __name__ == "__main__":
     init_list = [1, 3, 2]
