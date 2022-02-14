@@ -1,0 +1,1 @@
+Resolve-9-Add-Singleton-Pattern
