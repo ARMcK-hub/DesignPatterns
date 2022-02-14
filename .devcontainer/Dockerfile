@@ -4,7 +4,7 @@ FROM python:3.9
 # ----- Environment Setup -----
 
 # Set Workspace directory
-ARG WORKSPACE=/workspaces/DesignPatterns
+ARG WORKSPACE=/workspaces/design-patterns
 ENV WORKSPACE=${WORKSPACE}
 
 # Avoid warnings by switching to noninteractive
