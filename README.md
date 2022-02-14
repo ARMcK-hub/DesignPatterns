@@ -1,4 +1,4 @@
-# DesignPatterns
+# design-patterns
 *Generic Design Patterns in Python*
 
 For specifics on various patterns included, see the [docs](/docs/pattern_overview.md).
