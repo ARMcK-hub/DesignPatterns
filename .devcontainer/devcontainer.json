@@ -1,23 +1,16 @@
 {
 	"name": "DesignPatterns",
-	"context": "..",
-	"dockerFile": "Dockerfile",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "dev-container",
+	"workspaceFolder": "/workspaces/DesignPatterns",
 	"postCreateCommand": "cd $WORKSPACE && poetry install",
 	"settings": {
 		"terminal.integrated.profiles.linux": {
 			"bash": {
 				"path": "bash",
 				"icon": "terminal-bash"
-			},
-			"zsh": {
-				"path": "zsh"
-			},
-			"fish": {
-				"path": "fish"
-			},
-			"tmux": {
-				"path": "tmux",
-				"icon": "terminal-tmux"
 			},
 			"pwsh": {
 				"path": "pwsh",
@@ -27,6 +20,7 @@
 	},
 	"extensions": [
 		"ms-python.python",
-		"ms-python.vscode-pylance"
+		"ms-python.vscode-pylance",
+		"shd101wyy.markdown-preview-enhanced"
 	]
 }

@@ -1,5 +1,5 @@
 
-FROM python:3.7.5-stretch
+FROM python:3.9
 
 # ----- Environment Setup -----
 
