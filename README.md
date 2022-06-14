@@ -8,22 +8,22 @@
     </p>
     <p>
     <!-- Shields -->
-        <a href="https://github.com/armck-hub/design-patterns/LICENSE">
-            <img alt="License" src="https://img.shields.io/github/license/armck-hub/design-patterns.svg" />
+        <a href="https://github.com/armckinney/design-patterns/LICENSE">
+            <img alt="License" src="https://img.shields.io/github/license/armckinney/design-patterns.svg" />
         </a>
-        <a href="https://github.com/armck-hub/design-patterns/actions">
-            <img alt="Tests Passing" src="https://github.com/armck-hub/design-patterns/workflows/ci/badge.svg" />
+        <a href="https://github.com/armckinney/design-patterns/actions">
+            <img alt="Tests Passing" src="https://github.com/armckinney/design-patterns/workflows/ci/badge.svg" />
         </a>
-        <a href="https://codecov.io/gh/armck-hub/design-patterns">
-            <img alt="Code Coverage" src="https://codecov.io/gh/armck-hub/design-patterns/branch/master/graph/badge.svg" />
+        <a href="https://codecov.io/gh/armckinney/design-patterns">
+            <img alt="Code Coverage" src="https://codecov.io/gh/armckinney/design-patterns/branch/master/graph/badge.svg" />
         </a>
-        <a href="https://github.com/armck-hub/design-patterns/issues">
-            <img alt="Issues" src="https://img.shields.io/github/issues/armck-hub/design-patterns" />
+        <a href="https://github.com/armckinney/design-patterns/issues">
+            <img alt="Issues" src="https://img.shields.io/github/issues/armckinney/design-patterns" />
         </a>
-        <a href="https://github.com/armck-hub/design-patterns/pulls">
-            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armck-hub/design-patterns" />
+        <a href="https://github.com/armckinney/design-patterns/pulls">
+            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armckinney/design-patterns" />
         </a>
-        <a href="https://stackshare.io/armck-hub/design-patterns">
+        <a href="https://stackshare.io/armck/design-patterns">
             <img alt="StackShare.io" src="http://img.shields.io/badge/tech-stack-0690fa.svg?label=StackShare.io">
         </a>
     </p>
@@ -31,9 +31,9 @@
     <!-- Links -->
         <a href="#demo">View Demo</a>
         ·
-        <a href="https://github.com/armck-hub/design-patterns/issues/new/choose">Report Bug</a>
+        <a href="https://github.com/armckinney/design-patterns/issues/new/choose">Report Bug</a>
         ·
-        <a href="https://github.com/armck-hub/design-patterns/issues/new/choose">Request Feature</a>
+        <a href="https://github.com/armckinney/design-patterns/issues/new/choose">Request Feature</a>
     </p>
 </div>
 <br>
